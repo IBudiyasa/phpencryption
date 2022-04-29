@@ -10,6 +10,7 @@
     <body>
         <header class="iniheader">
             <a class="iniheaderlink" href="index.php">Enkripsi Kriptografi</a>
+            <hr class="iniruler">
         </header>
         <span class="inicontainer">
             <h2 class="inih2">Decode & Encode Base64</h2>
@@ -19,9 +20,12 @@
                         <input type="text" name="teks" placeholder="Masukkan sebuah teks" required>    
                     </li>
                     <li>
-                        <input type="radio" id="encode" name="pilihan" value="encode">
+                        <p class="initext">Metode yang akan digunakan : </p>
+                    </li>
+                    <li class="radios">
+                        <input class="inpradio" type="radio" id="encode" name="pilihan" value="encode" required>
                         <label for="encode">Encode</label><br>
-                        <input type="radio" id="decode" name="pilihan" value="decode">
+                        <input class="inpradio" type="radio" id="decode" name="pilihan" value="decode">
                         <label for="decode">Decode</label><br>
                     </li>
                     <li>
@@ -36,6 +40,9 @@
     </body>
 </html>
 <?php
+    //Deklarasi Variabel
+    $sebuah_string = $pilihan = "";
+
     //Mengecek apakah ada inputan dari form
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //Jika ada, lalu diisi ke variabel berikut

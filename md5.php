@@ -10,6 +10,7 @@
     <body>
         <header class="iniheader">
             <a class="iniheaderlink" href="index.php">Enkripsi Kriptografi</a>
+            <hr class="iniruler">
         </header>
         <span class="inicontainer">
             <h2 class="inih2">Encode md5</h2>
@@ -19,9 +20,12 @@
                         <input type="text" name="teks" placeholder="Masukkan sebuah teks" required>    
                     </li>
                     <li>
-                        <input type="radio" id="encode" name="pilihan" value="16">
+                        <p class="initext">Metode yang akan digunakan : </p>
+                    </li>
+                    <li class="radios">
+                        <input class="inpradio" type="radio" id="encode" name="pilihan" value="16" required>
                         <label for="encode">Raw 16bit binary format</label><br>
-                        <input type="radio" id="decode" name="pilihan" value="32">
+                        <input class="inpradio" type="radio" id="decode" name="pilihan" value="32">
                         <label for="decode">32 character hex</label><br>
                     </li>
                     <li>
@@ -36,6 +40,9 @@
     </body>
 </html>
 <?php
+    //Deklarasi variabel
+    $sebuah_string = $pilihan = "";
+
     //Mengecek apakah ada inputan dari form
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //Jika ada, lalu diisi ke variabel berikut

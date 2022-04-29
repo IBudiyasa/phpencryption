@@ -10,10 +10,11 @@
     <body>
         <header class="iniheader">
             <a class="iniheaderlink" href="index.php">Enkripsi Kriptografi</a>
+            <hr class="iniruler">
         </header>
         <span class="inicontainer">
             <h2 class="inih2">Decode & Encode OpenSSL</h2>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"><!--Mengirim data ke halaman ini-->
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                 <ul class="iniul">
                     <li>
                         <input type="text" name="teks" placeholder="Masukkan sebuah teks" required>    
@@ -22,7 +23,10 @@
                         <input type="text" name="key" placeholder="Masukkan key" required>
                     </li>
                     <li>
-                        <input type="radio" id="encode" name="pilihan" value="encode">
+                        <p class="initext">Metode yang akan digunakan : </p>
+                    </li>
+                    <li class="radios">
+                        <input type="radio" id="encode" name="pilihan" value="encode" required>
                         <label for="encode">Encode</label><br>
                         <input type="radio" id="decode" name="pilihan" value="decode">
                         <label for="decode">Decode</label><br>
@@ -39,6 +43,9 @@
     </body>
 </html>
 <?php
+    //Deklarasi variabel
+    $sebuah_string = $key = $pilihan = "";
+
     //Mengecek apakah ada inputan dari form
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //Jika ada, lalu diisi ke variabel berikut

@@ -10,13 +10,9 @@
     <body>
         <header class="iniheader">
             <a class="iniheaderlink" href="#">Enkripsi Kriptografi</a>
+            <hr class="iniruler">
         </header>
         <div class="inicontainer">
-            <div class="iniruler">
-                <hr>
-                <p>||</p>
-                <hr>
-            </div>
             <span class="inicontent">
                 <h2 class="inih2">Encode & Decode OpenSSL</h2>
                 <a href="openssl.php"><button class="inibtn">Encode OpenSSL</button></a>
