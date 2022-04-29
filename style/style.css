@@ -98,10 +98,10 @@ input[type=text]:focus {
 }
 
 .radios {
-    margin: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 245px
 }
   
 .radios input[type="radio"] {
@@ -119,6 +119,7 @@ input[type=text]:focus {
     font-size: 16px;
     border: 2px solid red;
     border-radius: 25px;
+    transition: ease 0.5s 0ms;
   }
   
   .radios label:hover {
