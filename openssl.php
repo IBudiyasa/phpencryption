@@ -14,7 +14,7 @@
         </header>
         <span class="inicontainer">
             <h2 class="inih2">Decode & Encode OpenSSL</h2>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"><!--Mengirim data ke halaman ini-->
                 <ul class="iniul">
                     <li>
                         <input type="text" name="teks" placeholder="Masukkan sebuah teks" required>    
