@@ -122,16 +122,30 @@ input[type=text]:focus {
     border: 2px solid red;
     border-radius: 25px;
     transition: ease 0.5s 0ms;
-  }
+}
   
-  .radios label:hover {
+.radios label:hover {
     background-color: red;
     color: white;
-  }
+}
   
-  
-  .radios input[type="radio"]:checked + label {
+.radios input[type="radio"]:checked + label {
     background-color: red;
     border-color: red;
     color: white;
-  }
+}
+
+.inifooter {
+    background-color: red;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inifooter p {
+    background-color: red;
+    color: gray;
+}

@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="iniheader">
-            <a class="iniheaderlink" href="index.php">Enkripsi Kriptografi</a>
+            <a class="iniheaderlink" href="index.php">Home</a>
             <hr class="iniruler">
         </header>
         <span class="inicontainer">
@@ -37,6 +37,9 @@
                 </ul>
             </form>
         </span>
+        <footer class="inifooter">
+            <p class="initext">I Gede Budiyasa</p>     
+        </footer>
     </body>
 </html>
 <?php
